@@ -2,6 +2,7 @@
 
 source ~/secret.sh
 
+repo=~/gits/gruvFiles
 repo_link=mango7006/gruvFiles.git
 repo_config=~/gits/gruvFiles/config/
 repo_home=~/gits/gruvFiles/home/
@@ -21,11 +22,10 @@ sudo cp -r ~/.config/wofi/ $repo_config
 
 read -r -p "Do you want to push to github? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
-
   echo "Pushing to github"
   sleep 2
   echo "..."
-  cd ~/gits/gruvFiles/
+  cd $repo
   git add .
   git commit -m "Updated dotfiles"
   git push $gittoken@github.com/$repo_link
