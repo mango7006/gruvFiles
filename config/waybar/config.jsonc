@@ -1,0 +1,106 @@
+{
+  "layer": "bottom",
+  "modules-left": ["hyprland/workspaces", "tray", "mpris"],
+  "modules-center": ["clock"],
+  "modules-right": ["bluetooth", "wireplumber", "network", "battery", "power-profiles-daemon", "custom/wlogout"],
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
+  },
+
+  "bluetooth": {
+    "format-connected": " {device_alias}",
+    "format-connected-battery": " {device_alias}",
+    "tooltip-format-connected-battery": "󰥉 {device_battery_percentage}%",
+    "format-off": "󰂲",
+    "format-on": "󰂯",
+    "format-disabled": "󰂲",
+    "on-click": "blueman-manager"
+  },
+
+  "wireplumber": {
+    "tooltip": false,
+    "scroll-step": 5,
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 {volume}%",
+    "on-click": "pavucontrol",
+    "on-click-right": "echo no",
+    "format-icons": {
+      "default": ["󰕿", "󰖀", "󰕾"]
+    }
+  },
+
+  "network": {
+    "tooltip": false,
+    "format-wifi": "{icon} {essid}",
+    "format-ethernet": "",
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "on-click": "nm-connection-editor"
+  },
+
+  "battery": {
+    "states": {
+      "full": 100,
+      "good": 95,
+      "decent": 50,
+      "warning": 30,
+      "critical": 20
+    },
+    "format": "{icon} {capacity}%",
+    "format-time": "{H} h {M} min",
+    "format-alt": "{icon} {time}",
+    "format-icons": ["", "", "", "", ""]
+  },
+
+  "clock": {
+    "format": " {:%H:%M}",
+    "format-alt": " {:%d-%m-%Y}",
+    "on-click-right": "echo no"
+  },
+
+  "custom/wlogout": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": "⏻"
+    },
+    "on-click": "archlinux-logout"
+  },
+
+  "mpris": {
+    "format": "<span color='#cc241d'> </span>  {artist} - {title}  ",
+    "max-length": 40,
+    "ignored-players": "firefox",
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-active": "/{icon}",
+    "on-click": "activate",
+    "sort-by-number": true,
+    "format-icons": {
+        "1": "I",
+        "2": "II",
+        "3": "III",
+        "4": "IV",
+        "5": "V",
+        "6": "VI",
+        "7": "VII",
+        "8": "VIII",
+        "9": "IX",
+        "10": "X"
+    },
+    "persistent-workspaces": {
+        "1": {},
+        "2": {},
+        "3": {},
+    },
+  }
+}
