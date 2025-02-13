@@ -27,7 +27,8 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   echo "..."
   cd $repo
   git add .
-  git commit -m "Updated dotfiles"
+  read -r -p "Commit Message: " comMessage
+  git commit -m "$comMessage"
   git push $gittoken@github.com/$repo_link
 else
   echo "Not pushing changes to github"
