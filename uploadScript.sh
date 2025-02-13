@@ -23,8 +23,6 @@ sudo cp -r ~/.config/wofi/ $repo_config
 read -r -p "Do you want to push to github? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   echo "Pushing to github"
-  sleep 2
-  echo "..."
   cd $repo
   git add .
   read -r -p "Commit Message: " comMessage
