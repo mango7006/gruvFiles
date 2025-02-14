@@ -37,8 +37,11 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   sudo cp -r $gitDir/waybar/ $conf
   sudo cp -r $gitDir/wofi/ $conf
   sudo cp $gitDir/starship.toml $conf
+
   sudo cp $gitDirHome/.wezterm.lua ~
   sudo cp $gitDirHome/.zshrc ~
+
+  sudo cp -r $gitDirFF ~/gits/
 else
   echo "Ending script without overwriting."
   exit
