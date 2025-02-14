@@ -30,6 +30,7 @@ fi
 read -r -p "Are you SURE that you want to replace your dotfiles? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   echo "Alrighty, overwriting."
+  mkdir -p ~/.config/vesktop/
   sudo cp -r $gitDir/dunst/ $conf
   sudo cp -r $gitDir/fastfetch/ $conf
   sudo cp -r $gitDir/hypr/ $conf
@@ -37,6 +38,8 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   sudo cp -r $gitDir/waybar/ $conf
   sudo cp -r $gitDir/wofi/ $conf
   sudo cp $gitDir/starship.toml $conf
+  sudo cp -r $gitDir/spicetify/ $conf
+  sudo cp -r $gitDir/vesktop/themes $conf/vesktop
   sudo cp $gitDirHome/.wezterm.lua ~
   sudo cp $gitDirHome/.zshrc ~
 else
