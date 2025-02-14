@@ -6,7 +6,7 @@
 cd ~
 mkdir -p gits
 cd ~/gits
-git clone https://github.com/mango7006/gruvFiles
+git clone --depth=1 https://github.com/mango7006/gruvFiles
 cd gruvFiles
 ```
 
