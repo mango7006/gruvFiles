@@ -19,7 +19,8 @@ sudo cp -r ~/.config/hypr/ $repo_config
 sudo cp -r ~/.config/nvim/ $repo_config
 sudo cp -r ~/.config/waybar/ $repo_config
 sudo cp -r ~/.config/wofi/ $repo_config
-sudo cp -r ~/.config/spicetify/ $repo_config
+sudo cp -r ~/.config/spicetify/config-xpui.ini $repo_config/spicetify
+sudo cp -r ~/.config/spicetify/Themes/ $repo_config/spicetify/Themes
 sudo cp -r ~/.config/vesktop/themes/ $repo_config/vesktop/themes
 
 read -r -p "Do you want to push to github? [y/N] " response
