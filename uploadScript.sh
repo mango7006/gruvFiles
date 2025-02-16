@@ -10,18 +10,23 @@ repo_ff=~/gits/gruvFiles/
 
 echo "Updating github repo for Dotfiles"
 
-sudo cp -r ~/gits/Firefox/ $repo_ff
-
-sudo cp ~/.zshrc $repo_home
-sudo cp ~/.wezterm.lua $repo_home
-
-sudo cp ~/.config/starship.toml $repo_config
-sudo cp -r ~/.config/dunst/ $repo_config
-sudo cp -r ~/.config/fastfetch/ $repo_config
-sudo cp -r ~/.config/hypr/ $repo_config
-sudo cp -r ~/.config/nvim/ $repo_config
-sudo cp -r ~/.config/waybar/ $repo_config
-sudo cp -r ~/.config/wofi/ $repo_config
+read -r -p "Do you want to copy dotfiles to repo? [y/N] " response
+if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
+  echo "Copying..."
+  cd $repo
+  sudo cp -r ~/gits/Firefox/ $repo_ff
+  sudo cp ~/.zshrc $repo_home
+  sudo cp ~/.wezterm.lua $repo_home
+  sudo cp ~/.config/starship.toml $repo_config
+  sudo cp -r ~/.config/dunst/ $repo_config
+  sudo cp -r ~/.config/fastfetch/ $repo_config
+  sudo cp -r ~/.config/hypr/ $repo_config
+  sudo cp -r ~/.config/nvim/ $repo_config
+  sudo cp -r ~/.config/waybar/ $repo_config
+  sudo cp -r ~/.config/wofi/ $repo_config
+else
+  echo "Not Updating dotfiles"
+fi
 
 read -r -p "Do you want to push to github? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
