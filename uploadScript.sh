@@ -6,7 +6,7 @@ repo=~/gits/gruvFiles
 repo_link=mango7006/gruvFiles.git
 repo_config=~/gits/gruvFiles/config/
 repo_home=~/gits/gruvFiles/home/
-repo_ff=~/gits/gruvFiles/Firefox/
+repo_ff=~/gits/gruvFiles/
 
 echo "Updating github repo for Dotfiles"
 
