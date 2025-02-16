@@ -10,11 +10,7 @@ echo "Install script for dotfiles"
 read -r -p "Do you want to install dependencies and packages? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   echo "Downloading packages"
-  sudo pacman -S --needed base-devel dunst fastfetch hyprland hyprlock hyprpicker neovim waybar wofi starship wezterm zsh luarocks ripgrep eza bat zoxide
-  sudo pacman -S --needed xdg-desktop-portal-gtk xdg-desktop-portal-hyprland ttf-jetbrains-mono-nerd swww qt5-wayland qt6-5compat qt6-shadertools qt6-wayland
-  sudo pacman -S --needed pavucontrol nwg-look network-manager-applet networkmanager nm-connection-editor libnotify fzf brightnessctl blueman bluez bluez-utils
-  paru -S --needed arcolinux-logout gruvbox-dark-gtk gruvbox-dark-icons-gtk hyprshot waypaper windows-10-cursor
-  paru
+  paru --needed -S $(<pkgs.txt)
 else
   echo "Not installing packages, WARNING, this might make my dotfiles unuseable."
 fi
