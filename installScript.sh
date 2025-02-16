@@ -3,6 +3,7 @@
 gitDirHome=~/gits/gruvFiles/home
 gitDir=~/gits/gruvFiles/config
 conf=~/.config/
+gitDirFF=~/gits/gruvFiles/Firefox/
 
 echo "Install script for dotfiles"
 

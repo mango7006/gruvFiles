@@ -10,7 +10,7 @@ repo_ff=~/gits/gruvFiles/Firefox/
 
 echo "Updating github repo for Dotfiles"
 
-sudo cp -r ~/gits/Firefox_Startpage/ $repo_ff
+sudo cp -r ~/gits/Firefox/ $repo_ff
 
 sudo cp ~/.zshrc $repo_home
 sudo cp ~/.wezterm.lua $repo_home
