@@ -12,7 +12,8 @@ config.color_scheme = "Gruvbox dark, medium (base16)"
 -- Change Wezterm Font
 config.font = wezterm.font_with_fallback({
 	"JetBrainsMono Nerd Font",
-	"Symbols Nerd Font Mono",
+	"Symbols Nerd Font",
+	"awesome-terminal-fonts",
 })
 
 config.font_size = 14
