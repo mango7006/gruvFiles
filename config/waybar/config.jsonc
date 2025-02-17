@@ -31,7 +31,6 @@
     "format-wifi": "{icon} {essid}",
     "format-ethernet": "",
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
-    "on-click": "nm-connection-editor"
   },
 
   "battery": {
