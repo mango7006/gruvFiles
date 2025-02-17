@@ -30,7 +30,6 @@ window#waybar > box {
 #wireplumber,
 #network,
 #battery,
-#power-profiles-daemon,
 #custom-wlogout
 {
   background: #282828;
@@ -45,12 +44,13 @@ window#waybar > box {
 #workspaces button:hover,
 #workspaces button.active:hover,
 #workspaces button.empty:hover,
+#tray:hover,
+#mpris:hover,
 #clock:hover,
 #bluetooth:hover,
 #wireplumber:hover,
 #network:hover,
 #battery:hover,
-#power-profiles-daemon:hover,
 #custom-wlogout:hover
 {
   color: #83a598;
@@ -68,7 +68,6 @@ window#waybar > box {
 }
 
 #custom-wlogout,
-#power-profiles-daemon,
 #bluetooth
 {
   font-size: 18px;

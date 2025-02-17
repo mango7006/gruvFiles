@@ -2,19 +2,7 @@
   "layer": "bottom",
   "modules-left": ["hyprland/workspaces", "tray", "mpris"],
   "modules-center": ["clock"],
-  "modules-right": ["bluetooth", "wireplumber", "network", "battery", "power-profiles-daemon", "custom/wlogout"],
-
-  "power-profiles-daemon": {
-    "format": "{icon}",
-    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-    "tooltip": true,
-    "format-icons": {
-      "default": "",
-      "performance": "",
-      "balanced": "",
-      "power-saver": ""
-    }
-  },
+  "modules-right": ["bluetooth", "wireplumber", "network", "battery", "custom/wlogout"],
 
   "bluetooth": {
     "format-connected": " {device_alias}",
@@ -76,7 +64,7 @@
 
   "mpris": {
     "format": "<span color='#cc241d'> </span>  {artist} - {title}  ",
-    "max-length": 40,
+    "max-length": 400,
     "ignored-players": "firefox",
   },
 
