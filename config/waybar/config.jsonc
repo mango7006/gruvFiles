@@ -65,7 +65,8 @@
   "mpris": {
     "format": "<span color='#cc241d'> </span>  {artist} - {title}  ",
     "max-length": 400,
-    "ignored-players": "firefox",
+    "ignored-players": ["firefox"],
+    "interval": 2,
   },
 
   "hyprland/workspaces": {
