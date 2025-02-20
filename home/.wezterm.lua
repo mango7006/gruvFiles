@@ -27,6 +27,6 @@ config.prefer_egl = true
 
 config.default_cursor_style = "SteadyBar"
 
-config.cursor_thickness = "1px"
+config.cursor_thickness = "2px"
 
 return config
