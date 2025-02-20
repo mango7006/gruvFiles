@@ -3,7 +3,7 @@
   border-radius: 0px;
   font-family: "Symbols Nerd Font Mono", "Jetbrains Mono";
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   min-height: 11px;
   margin: 2px 2px 2px 2px;
 }
@@ -56,6 +56,16 @@ window#waybar > box {
   color: #83a598;
   margin: 1px 4px 3px 4px;
   transition: ease 0.2s;
+}
+
+#workspaces button:hover,
+#workspaces button.active:hover,
+#workspaces button.empty:hover,
+#workspaces button.active,
+#workspaces button.empty,
+#workspaces
+{
+  font-weight: 900;
 }
 
 #workspaces button:hover,
