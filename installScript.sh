@@ -38,7 +38,7 @@ fi
 read -r -p "Do you want to install dependencies and packages? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   echo "Downloading packages"
-  paru --needed -S $(<pkgs.txt)
+  paru --needed -S $(<pkgs.txt) || yay --needed -S $(<pkgs.txt)
 else
   echo "Not installing packages, WARNING, this might make my dotfiles unuseable."
 fi
