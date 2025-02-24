@@ -15,7 +15,7 @@
   --primary-rgb: 254, 128, 25;
   --secondary-rgb: 142, 192, 124;
   --tertiary-rgb: 247, 72, 52;
-  --quaternary-rgb: 211, 134, 155;
+  --quaternary-rgb: 69, 133, 136;
 
   --bg: rgb(var(--bg-rgb));
   --bg-alt: rgb(var(--bg-alt-rgb));
