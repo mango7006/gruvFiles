@@ -7,14 +7,6 @@ gitDirFF=~/gits/gruvFiles/Firefox
 
 echo "Install script for dotfiles"
 
-read -r -p "Do you want to install dependencies and packages? [y/N] " response
-if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
-  echo "Downloading packages"
-  paru --needed -S $(<pkgs.txt)
-else
-  echo "Not installing packages, WARNING, this might make my dotfiles unuseable."
-fi
-
 read -r -p "Do you want to make a backup of your current dotfiles? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   echo "Creating backup of current dotfiles"
@@ -40,8 +32,15 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
 
   sudo cp -r $gitDirFF ~/gits/
 else
-  echo "Ending script without overwriting."
-  exit
+  echo "Not overwriting."
+fi
+
+read -r -p "Do you want to install dependencies and packages? [y/N] " response
+if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
+  echo "Downloading packages"
+  paru --needed -S $(<pkgs.txt)
+else
+  echo "Not installing packages, WARNING, this might make my dotfiles unuseable."
 fi
 
 echo "End of install script"
