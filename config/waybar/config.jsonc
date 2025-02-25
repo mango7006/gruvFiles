@@ -62,12 +62,13 @@
     "format": "{icon} {capacity}%",
     "format-time": "{H} h {M} min",
     "format-alt": "{icon} {time}",
+    "format-charging": "<span font='Font Awesome 5 Free'></span> <span font='Font Awesome 5 Free 11'>{icon}</span> {capacity}%",
     "format-icons": [
       "",
       "",
       "",
       "",
-      ""
+      ""
     ]
   },
   "clock": {
