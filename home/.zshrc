@@ -33,9 +33,9 @@ alias cat="bat"
 
 alias cd="z"
 
-alias cp="cp -iv"
-alias mv="mv -iv"
-alias rm="rm -iv"
+alias cp="cp -Iv"
+alias mv="mv -Iv"
+alias rm="rm -Iv"
 
 alias grep="rg -P -i --color=auto"
 
