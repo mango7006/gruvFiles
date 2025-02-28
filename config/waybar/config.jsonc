@@ -92,7 +92,7 @@
   },
   "hyprland/workspaces": {
     "format": "{icon}",
-    "format-active": "/{icon}",
+    "format-active": "{icon}",
     "on-click": "activate",
     "sort-by-number": true,
     "format-icons": {
