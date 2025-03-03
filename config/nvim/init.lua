@@ -4,8 +4,9 @@ vim.filetype.add({
     extension = { rasi = "rasi" },
     pattern = {
         [".*/waybar/config"] = "jsonc",
-        [".*/mako/config"] = "dosini",
+        [".*/dunst/dunstrc"] = "hyprlang",
         [".*/kitty/*.conf"] = "bash",
         [".*/hypr/.*%.conf"] = "hyprlang",
+        [".*/wofi/config"] = "hyprlang",
     },
 })
