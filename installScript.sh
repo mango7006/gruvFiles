@@ -3,7 +3,6 @@
 gitDirHome=~/gits/gruvFiles/home
 gitDir=~/gits/gruvFiles/config
 conf=~/.config/
-gitDirFF=~/gits/gruvFiles/Firefox
 
 echo "Install script for dotfiles"
 
@@ -29,8 +28,6 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
 
   sudo cp $gitDirHome/.wezterm.lua ~
   sudo cp $gitDirHome/.zshrc ~
-
-  sudo cp -r $gitDirFF ~/gits/
 else
   echo "Not overwriting."
 fi

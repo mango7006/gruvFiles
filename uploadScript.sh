@@ -6,7 +6,6 @@ repo=~/gits/gruvFiles
 repo_link=mango7006/gruvFiles.git
 repo_config=~/gits/gruvFiles/config/
 repo_home=~/gits/gruvFiles/home/
-repo_ff=~/gits/gruvFiles/
 
 echo "Updating github repo for Dotfiles"
 
@@ -14,7 +13,6 @@ read -r -p "Do you want to copy dotfiles to repo? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   echo "Copying..."
   cd $repo
-  sudo cp -r ~/gits/Firefox/ $repo_ff
   sudo cp ~/.zshrc $repo_home
   sudo cp ~/.wezterm.lua $repo_home
   sudo cp ~/.config/starship.toml $repo_config
