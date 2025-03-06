@@ -22,6 +22,7 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   sudo cp -r ~/.config/nvim/ $repo_config
   sudo cp -r ~/.config/waybar/ $repo_config
   sudo cp -r ~/.config/wofi/ $repo_config
+  sudo cp -r ~/.config/kitty/ $repo_config
 else
   echo "Not Updating dotfiles"
 fi
