@@ -32,8 +32,9 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   echo "Pushing to github"
   cd $repo
   git add .
+  date=$(date +%b/%d/%H:%M)
   read -r -p "Commit Message: " comMessage
-  git commit -m "$comMessage"
+  git commit -m "$comMessage $date"
   git push $gittoken@github.com/$repo_link
 else
   echo "Not pushing changes to github"
