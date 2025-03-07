@@ -58,7 +58,6 @@ ttf-nerd-fonts-symbols
 typescript
 vlc
 waybar
-wezterm
 wget
 wofi
 xdg-desktop-portal-gtk
@@ -73,3 +72,4 @@ hyprshot
 topgrade
 waypaper
 windows-10-cursor
+kitty
