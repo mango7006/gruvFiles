@@ -18,16 +18,16 @@ fi
 read -r -p "Are you SURE that you want to replace your dotfiles? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   echo "Alrighty, overwriting."
-  sudo cp -r $gitDir/dunst/ $conf
-  sudo cp -r $gitDir/fastfetch/ $conf
-  sudo cp -r $gitDir/hypr/ $conf
-  sudo cp -r $gitDir/nvim/ $conf
-  sudo cp -r $gitDir/waybar/ $conf
-  sudo cp -r $gitDir/wofi/ $conf
-  sudo cp $gitDir/starship.toml $conf
-  sudo cp -r $gitDir/kitty/ $conf
-  sudo cp $gitDirHome/.wezterm.lua ~
-  sudo cp $gitDirHome/.zshrc ~
+  cp -r $gitDir/dunst/ $conf
+  cp -r $gitDir/fastfetch/ $conf
+  cp -r $gitDir/hypr/ $conf
+  cp -r $gitDir/nvim/ $conf
+  cp -r $gitDir/waybar/ $conf
+  cp -r $gitDir/wofi/ $conf
+  cp $gitDir/starship.toml $conf
+  cp -r $gitDir/kitty/ $conf
+  cp $gitDirHome/.wezterm.lua ~
+  cp $gitDirHome/.zshrc ~
 else
   echo "Not overwriting."
 fi
