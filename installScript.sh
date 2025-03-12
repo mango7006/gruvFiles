@@ -10,7 +10,7 @@ read -r -p "Do you want to make a backup of your current dotfiles? [y/N] " respo
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   echo "Creating backup of current dotfiles"
   mkdir -p ~/.config/bkup
-  sudo tar -czvf ~/.config/bkup/backup.tar.gz $conf/kitty $conf/dunst $conf/fastfetch $conf/hypr $conf/nvim $conf/waybar $conf/wofi $conf/starship.toml ~/.wezterm.lua ~/.zshrc
+  sudo tar -czvf ~/.config/bkup/backup.tar.gz $conf/kitty $conf/dunst $conf/fastfetch $conf/hypr $conf/nvim $conf/waybar $conf/wofi $conf/starship.toml ~/.zshrc
 else
   echo "Not making a backup of current dotfiles"
 fi
@@ -26,7 +26,6 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   cp -r $gitDir/wofi/ $conf
   cp $gitDir/starship.toml $conf
   cp -r $gitDir/kitty/ $conf
-  cp $gitDirHome/.wezterm.lua ~
   cp $gitDirHome/.zshrc ~
 else
   echo "Not overwriting."

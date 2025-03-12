@@ -14,7 +14,6 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
   echo "Copying..."
   cd $repo
   sudo cp ~/.zshrc $repo_home
-  sudo cp ~/.wezterm.lua $repo_home
   sudo cp ~/.config/starship.toml $repo_config
   sudo cp -r ~/.config/dunst/ $repo_config
   sudo cp -r ~/.config/fastfetch/ $repo_config
